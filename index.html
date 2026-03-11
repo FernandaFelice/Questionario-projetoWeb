@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia de Infraestrutura Urbana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="caution.png" type="image/x-icon">
+</head>
+<body>
+<section>
+<article>
+    <h1>Faça sua denúncia aqui</h1>
+    <P>Este site é destinado para denúncias de infraestrutura urbana. Canal para moradores regristrarem situações como buracos nas ruas, falta de iluminação, vazamento de esgoto e outros problemas da cidade.</P>
+    <p>As informações coletadas será encaminhada para os órgãos responsáveis pela manutenção urbana, ajudando na organização das solicitações e na resolução mais rápida dos problemas.</p>
+    <br>
+</article>
+
+<form>
+<h2>Formulário de denúncia</h2>
+
+<fieldset>
+    <legend>Dados do denunciante</legend><br>
+
+    <label for="nome">Nome</label>
+    <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo">
+
+    <br><br>
+
+    <label for="email">E-mail</label>
+    <input id="email" name="imail" type="email" placeholder="Digite seu email">
+
+    <br><br>
+
+    <label for="telefone">Telefone</label>
+    <input id="telefone" name="telefone" type="number" placeholder="(DDD) 999999999">
+
+    <br><br>
+
+    <label for="cpf">CPF</label>
+    <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" maxlength="11">
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Local do problema</legend><br>
+
+    <label for="estado">Estado</label>
+    <select name="estado" id="estado">
+        <option value="" disabled selected>Selecione o estado</option>
+        <option value="pb">Paraíba</option>
+        <option value="pe">Pernambuco</option>
+        <option value="rn">Rio Grande do Norte</option>
+        <option value="ce">Ceará</option>
+    </select>
+
+    <br><br>
+
+    <label for="cidade">Cidade</label>
+    <select name="cidade" id="cidade">
+        <option value="" disabled selected>Selecione o Cidade</option>
+        <option value="Patos">Patos</option>
+        <option value="malta">Malta</option>
+        <option value="condado">Condado</option>
+        <option value="Pombal">Pombal</option>
+    </select>
+
+    <br><br>
+
+    <label for="rua">Rua</label>
+    <input id="rua" name="rua" type="text">
+
+    <br><br>
+
+    <label for="bairro">Bairro</label>
+    <input id="bairro" name="bairro" type="text">
+
+    <br><br>
+
+    <label for="dataocorrencia">Data da ocorrência</label>
+    <input 
+    id="dataocorrencia" name="dataocorrencia" type="date">
+</fieldset>
+<br>
+<fieldset>
+    <legend>Tipo de problema</legend>
+    <p>Selecione um ou mais problemas:</p>
+
+    <label for="buraco">Buraco na rua</label>
+    <input id="buraco" name="buraco" type="checkbox" value="buraco"><br>
+
+    <label for="iluminação">Falta de iluminação</label>
+    <input id="iluminação" name="iluminação" type="checkbox" value="iluminação"><br>
+
+    <label for="lixo">Lixo acumulado</label>
+    <input id="lixo" name="lixo" type="checkbox" value="lixo"><br>
+
+    <label for="calçada">Calçada adanificada</label>
+    <input id="calçada" name="calçada" type="checkbox" value="calçada"><br>
+
+    <label for="esgoto">Vazamento de esgoto</label>
+    <input id="esgoto" name="esgoto" type="checkbox" value="esgoto"><br>
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Nível de urgência</legend><br>
+
+    <label for="baixa">Baixa</label>
+    <input id="baixa" name="urgencia" type="radio" value="baixa"><br>
+
+    <label for="media">Média</label>
+    <input id="media" name="urgencia" type="radio" value="media"><br>
+
+    <label for="alta">Alta</label>
+    <input id="alta" name="urgencia" type="radio" value="alta"><br>
+
+    <p>Informações adicionais:</p>
+    <label for="pedestre">Risco para pedestre</label>
+    <input id="pedestre" name="pedestre" type="checkbox" value="pedestre"><br>
+
+    <label for="veiculos">Risco para veiculos</label>
+    <input id="veiculos" name="veiculos" type="checkbox" value="veiculos"><br>
+
+    <label for="escola">Próximo de escola</label>
+    <input id="escola" name="escola" type="checkbox" value="escola"><br>
+
+    <label for="hospital">Próximo de hospital</label>
+    <input id="hospital" name="hospital" type="checkbox" value="hospital"><br>
+</fieldset><br>
+
+
+<label for="descriçao">Descriçao do problema</label><br>
+<textarea name="descriçao" id="descriçao" rows="5" cols="50" placeholder="Descreva o problema "></textarea>
+
+<br><br>
+
+<button type="submit">Enviar dados</button>
+<button type="reset">Limpar dados</button>
+
+</form>
+</section>
+
+</body>
+</html>
